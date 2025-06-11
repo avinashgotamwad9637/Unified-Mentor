@@ -1,0 +1,70 @@
+/* Root color variables */
+:root {
+    --primary-bg: #000000;
+    --secondary-bg: #f4f4f4;
+    --text-color: #333333;
+    --heading-color: #0077ff;
+    --highlight: #ffa500;
+    --white: #ffffff;
+    --whitee: #151414a2;
+}
+
+/* Reset default margin and font */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--secondary-bg);
+    color: var(--text-color);
+}
+
+/* Navigation Bar page*/
+.nav_bar {
+    background-color: var(--primary-bg);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.71);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.heading_navbar {
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    color: var(--white);
+    font-size: 1.8em;
+}
+
+/* Section Styling  for page*/
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings of the page*/
+h1 {
+    color: var(--heading-color);
+    text-shadow: 2px 2px 5px var(--whitee);
+    margin-top: 0;
+    font-size: 2em;
+    border-bottom: 2px solid var(--highlight);
+    padding-bottom: 5px;
+}
+
+h2 {
+    color: var(--highlight);
+    text-shadow: 2px 2px 5px var(--whitee);
+    margin-top: 20px;
+}
+
+/* Paragraphs of the page*/
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
