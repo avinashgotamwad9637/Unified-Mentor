@@ -1,0 +1,145 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+header, nav, main, footer {
+  padding: 1rem;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0.5rem 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+  background: #ddd;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navbar li a:hover {
+  background: #ccc;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 300px;
+  background-image: url('image/professionalism-ecommerce-business-concept-seriouslooking-determined-smart-gorgeous-redhead-woma.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-text {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+
+  /* Background image behind the text */
+ background-image: url('/Responsive_WEB_Page/image/professionalism-ecommerce-business-concept-seriouslooking-determined-smart-gorgeous-redhead-woma.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  opacity: 0.95;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Main Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.content div {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive Media Queries */
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin: 0 1rem;
+  }
+
+  .content {
+    flex-direction: row;
+  }
+
+  .hero-text {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-text {
+    font-size: 3rem;
+  }
+
+  .content div {
+    padding: 2rem;
+  }
+}
