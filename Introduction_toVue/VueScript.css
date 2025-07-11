@@ -1,0 +1,40 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e0eafc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .user-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .user-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .user-name {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .user-role {
+      color: #777;
+      font-size: 0.95rem;
+    }
